@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="QPG_DatabaseModelStoreContainer" CdmEntityContainer="QPG_DatabaseEntities">
+    <EntitySetMapping Name="user_registration">
+      <EntityTypeMapping TypeName="QPG_DatabaseModel.user_registration">
+        <MappingFragment StoreEntitySet="user_registration">
+          <ScalarProperty Name="user_Id" ColumnName="user_Id" />
+          <ScalarProperty Name="user_name" ColumnName="user_name" />
+          <ScalarProperty Name="user_gender" ColumnName="user_gender" />
+          <ScalarProperty Name="user_dob" ColumnName="user_dob" />
+          <ScalarProperty Name="insti_name" ColumnName="insti_name" />
+          <ScalarProperty Name="user_password" ColumnName="user_password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

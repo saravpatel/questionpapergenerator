@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="QPG_DatabaseModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="user_registration">
+    <Key>
+      <PropertyRef Name="user_Id" />
+    </Key>
+    <Property Name="user_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="user_name" Type="varchar(max)" />
+    <Property Name="user_gender" Type="varchar(max)" />
+    <Property Name="user_dob" Type="date" />
+    <Property Name="insti_name" Type="varchar(max)" />
+    <Property Name="user_password" Type="varchar(max)" />
+  </EntityType>
+  <EntityContainer Name="QPG_DatabaseModelStoreContainer">
+    <EntitySet Name="user_registration" EntityType="Self.user_registration" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
